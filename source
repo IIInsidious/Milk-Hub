@@ -1,0 +1,66 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local dahood = Instance.new("TextButton")
+local arsenal = Instance.new("TextButton")
+local bedwars = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(214, 220, 179)
+main.Position = UDim2.new(0.644363642, 0, 0.405535519, 0)
+main.Size = UDim2.new(0, 400, 0, 400)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(247, 255, 207)
+label.Size = UDim2.new(0, 400, 0, 50)
+label.Font = Enum.Font.SciFi
+label.Text = "Milk Hub"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 14.000
+
+dahood.Name = "dahood"
+dahood.Parent = main
+dahood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dahood.Position = UDim2.new(0, 0, 0.124999993, 0)
+dahood.Size = UDim2.new(0, 50, 0, 50)
+dahood.Font = Enum.Font.SourceSans
+dahood.Text = "Da Hood"
+dahood.TextColor3 = Color3.fromRGB(0, 0, 0)
+dahood.TextSize = 14.000
+dahood.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
+end)
+
+arsenal.Name = "arsenal"
+arsenal.Parent = main
+arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+arsenal.Position = UDim2.new(0.125, 0, 0.125, 0)
+arsenal.Size = UDim2.new(0, 50, 0, 50)
+arsenal.Font = Enum.Font.SourceSans
+arsenal.Text = "Arsenal"
+arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+arsenal.TextSize = 14.000
+arsenal.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+bedwars.Name = "bedwars"
+bedwars.Parent = main
+bedwars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bedwars.Position = UDim2.new(0.25, 0, 0.125, 0)
+bedwars.Size = UDim2.new(0, 50, 0, 50)
+bedwars.Font = Enum.Font.SourceSans
+bedwars.Text = "Bedwars"
+bedwars.TextColor3 = Color3.fromRGB(0, 0, 0)
+bedwars.TextSize = 14.000
+bedwars.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
